@@ -1,0 +1,103 @@
+/* * {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, body {
+  margin: 0;
+} */
+
+html {
+  font-family: fantasy;
+}
+
+table {
+  margin: 0 auto;
+}
+
+td {
+  background-color: lightgray;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  font-family: fantasy;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.num-of-mines, .restart-btn, .timer{
+  /*display: inline-block;*/
+  text-align: center;
+  color: red;
+  background-color: black;
+  font-size: 40px;
+  width: 80px;
+  height: 50px;
+  margin: 10px;
+  /*border: 1px solid black;*/
+}
+
+.restart-btn {
+  background-color: gray;
+  font-size: 25px;
+  width: 50px;
+}
+
+.select-container {
+  text-align: center;
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.safeClick-btn, .hints-btn, .manuallyCreate-btn {
+  background-color: gray;
+  width: 60px;
+  height: 50px;
+  font-size: 20px;
+  font-family: fantasy;
+}
+
+.manuallyCreate-btn {
+  width: 130px;
+}
+/*///////////////////*/
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  border: 10px solid gray;
+  gap: 0.3em;
+
+  width: fit-content;
+  margin: 0 auto;
+
+  background-color: rgb(226, 226, 226);
+}
+
+.header, .middle-container, .buttons-container {
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+  gap: 2em;
+}
+
+.middle-container {
+  gap: 0.1em;
+}
+
+.safeClicks-container, .hints-container, .manuallyCreate-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.board-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 10px;
+}
+
+
+.monospace-font {
+  font-family: monospace;
+}

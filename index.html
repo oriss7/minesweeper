@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Minesweeper</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body onload="init()">
+	<div class="main-container">
+		<div class="header">
+			<div class="num-of-mines">0</div>
+			<button class="restart-btn" onclick="init()">🙂</button>
+			<div class="timer">000</div>
+		</div>
+	
+		<div class="middle-container">
+			<select class="select-container" onchange="setLevel(event)">
+				<option label="Easy" value="easy"/>
+				<option selected label="Medium" value="medium"/>
+				<option label="Hard" value="hard"/>
+			</select>
+			<h3 class="best-score monospace-font">BestScore - 00</h3>
+			<h3 class="monospace-font">|</h3>
+			<h3 class="lives-left monospace-font">3 Lives Left!</h3>
+		</div>
+	
+		<div class="buttons-container monospace-font">
+			<div class="safeClicks-container">
+				<button class="safeClick-btn" onclick="safeClick()">Safe Click</button>
+				<h3 class="safeClick-count">3 clicks</h3>
+			</div>
+	
+			<div class="hints-container">
+				<button class="hints-btn" onclick="hintsButtonPressed()">Hints</button>
+				<h3 class="hints-count">3 hints</h3>
+			</div>
+	
+			<div class="manuallyCreate-container">
+				<button class="manuallyCreate-btn" onclick="manuallyCreateMode()">
+				Manually create mode</button>
+				<h3 class="manuallyCreate-status">Off</h3>
+			</div>
+		</div>
+	
+		<div class="board-container">GAME GOES HERE</div>
+	</div>
+	<script src="js/controller.js"></script>
+	<script src="js/model.js"></script>
+	<script src="js/view.js"></script>
+</body>
+</html>
